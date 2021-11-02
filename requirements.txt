@@ -1,4 +1,5 @@
 attrs==21.2.0
+autopep8==1.6.0
 aws-cdk.assets==1.130.0
 aws-cdk.aws-apigateway==1.130.0
 aws-cdk.aws-applicationautoscaling==1.130.0
@@ -52,10 +53,17 @@ aws-cdk.custom-resources==1.130.0
 aws-cdk.cx-api==1.130.0
 aws-cdk.pipelines==1.130.0
 aws-cdk.region-info==1.130.0
+boto3==1.19.8
+botocore==1.22.8
 cattrs==1.8.0
 constructs==3.3.161
+jmespath==0.10.0
 jsii==1.41.0
 publication==0.0.3
+pycodestyle==2.8.0
 python-dateutil==2.8.2
+s3transfer==0.5.0
 six==1.16.0
+toml==0.10.2
 typing-extensions==3.10.0.2
+urllib3==1.26.7

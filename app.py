@@ -13,8 +13,8 @@ from my_pipeline.my_pipeline_stack import MyPipelineStack
 
 
 app = core.App()
-MyPipelineStack(app, "MyPipelineStack",
-                env=cdk.Environment(account="597729917624", region="eu-central-1")
+MyPipelineStack(app, "MyPipelineStack"
+                # , env=cdk.Environment(account="597729917624", region="eu-central-1")
     )
 
 app.synth()

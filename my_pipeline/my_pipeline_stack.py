@@ -19,7 +19,8 @@ class MyPipelineStack(cdk.Stack):
                             input=CodePipelineSource.connection("MoeinGh/send-email-cdk", "main" , 
                                 connection_arn="arn:aws:codestar-connections:eu-central-1:597729917624:connection/bbc30f95-9181-43a3-a4b5-60098faed96c"
                             ),
-                            commands=["npm install -g aws-cdk", 
+                            commands=["/root/.pyenv/versions/3.9.5/bin/python -m pip install --upgrade pip", 
+                                "npm install -g aws-cdk", 
                                 "python -m pip install -r requirements.txt", 
                                 "cdk synth"]
                         )

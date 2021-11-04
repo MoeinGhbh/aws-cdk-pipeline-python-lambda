@@ -33,6 +33,7 @@ class MyPipelineStack(cdk.Stack):
 
         # create s3 bucket
         s3 = _s3.Bucket(self, "s3bucket")
+        s31 = _s3.Bucket(self, "s3bucket1")
 
         # create s3 notification for lambda function
         notification = aws_s3_notifications.LambdaDestination(function)

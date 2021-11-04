@@ -25,12 +25,6 @@ def sent_emails_address():
     return lst_steam_key
 
 
-def test():
-    pass
-
-
-
-
 def main(event, context):
     
     lst_sent_email_address = sent_emails_address()

@@ -22,7 +22,7 @@ class MyPipelineStack(cdk.Stack):
                             commands=[
                                 "/root/.pyenv/versions/3.9.5/bin/python -m pip install --upgrade pip", 
                                 "npm install -g aws-cdk", 
-                                "python -m pip install -r requirements.txt", 
+                                "python3 -m pip install -r requirements.txt", 
                                 "cdk synth"]
                         )
                     )

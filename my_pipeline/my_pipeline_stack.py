@@ -20,8 +20,8 @@ class MyPipelineStack(cdk.Stack):
                                 connection_arn="arn:aws:codestar-connections:eu-central-1:597729917624:connection/bbc30f95-9181-43a3-a4b5-60098faed96c"
                             ),
                             commands=[
-                                # "/root/.pyenv/versions/3.9.5/bin/python -m pip install --upgrade pip", 
-                                # "npm install -g aws-cdk", 
+                                "/root/.pyenv/versions/3.9.5/bin/python -m pip install --upgrade pip", 
+                                "npm install -g aws-cdk", 
                                 "python -m pip install -r requirements.txt", 
                                 "cdk synth"]
                         )
@@ -29,7 +29,7 @@ class MyPipelineStack(cdk.Stack):
 
          # create lambda function
         function = _lambda.Function(self, "lambda_function",
-                                    runtime=_lambda.Runtime.PYTHON_3_7,
+                                    runtime=_lambda.Runtime.PYTHON_3_9,
                                     handler="lambda-handler.main",
                                     code=_lambda.Code.asset("./lambda"))
 
